@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Comfortaa'),
+    url('Comfortaa-VariableFont_wght.ttf') format('ttf');
+}
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    background: #fffedc;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+header div {
+    margin: auto;
+    font-size: 3.25em;
+    letter-spacing: 3px;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 80px;
+    width: 100px;
+}
+.columns {
+    width: 100%;
+    height: 75px;
+    background: #dadd9f;
+}
+.navbar {
+    padding-top: 0;
+}
+.container {
+    width: 96%;
+    max-width: 100%;
+    justify-content: space-between;
+}
+.columns a {
+    width: 22.5%;
+    background: #a18e41;
+    border: 2px solid #444138;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #dadd9f;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 70px;
+    vertical-align: baseline;
+    transition: all 0.3s linear;
+}
+.columns a:hover {
+    box-shadow: 0px 4px 6px grey;
+    transform: translate(px, -5px);
+    transition: all 0.3s linear;
+}
+.card {
+    width: 100%;
+    background: #cfe0a7;
+    border: 0px;
+    border-radius: 0px;
+    display:block;
+    word-wrap: normal;
+}
+.card div {
+    width: 97%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.first-line {
+    display: flex;
+}
+.first-line img {
+    width: 455px;
+    height: 310px;
+}
+.first-line div {
+    padding-top: 0px;
+    margin-left: 14%;
+    height: 310px;
+    width: 45%;
+    font-size: 1.3em;
+    text-align: justify;
+    line-height: 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.second-line {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.second-line button {
+    width: 175px;
+    height: 55px;
+    font-size: 1.2em;
+    background: #c0aa52;
+    border-radius: 13px;
+    border: 2px #444138 solid;
+    transition: all 0.3s linear;
+}
+.second-line button:hover {
+    box-shadow: 3px 3px 3px grey;
+    cursor: pointer;
+    transform: translate(-4px, -4px);
+    transition: all 0.3s linear;
+}
+.empty {
+    width: 100%;
+    height: 120px;
+}
+footer {
+    padding: 40px 0;
+    width: 100%;
+    background: #c0aa52;
+    display: flex;
+    justify-content: space-around;
+}
+footer div {
+    width: 25%;
+    font-size: 1.25em;
+    text-align: justify;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+}
+@media (max-width: 910px) {
+    header {
+        height: 120px;
+    }
+    header div {
+        font-size: 2.5em;
+        letter-spacing: 4px;
+    }
+    header img {
+        height: 70px;
+        width: 87px;
+    }
+    .columns {
+        flex-direction: column;
+        outline: none;
+        height: 150px;
+        font-size: 1.1em;
+    }
+    .columns a {
+        width: 100%;
+        height: 50px;
+        border: 0px;
+        border-radius: 0;
+        outline: 1px solid #444138;
+        line-height: 50px;
+        vertical-align: baseline;
+    }
+    .columns a:hover {
+        box-shadow: 0px 0px 0px grey;
+        transform: translate(0px, 0px);
+    }
+    .columns .container {
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .card div {
+        width: 96%;
+        margin: auto;
+    }
+    .first-line {
+        display: block;
+        text-align: center;
+    }
+    .first-line div {
+        margin-top: 10px;
+    }
+    .card div .first-line div {
+        padding-top: 0px;
+        padding-bottom: 0;
+        height: auto;
+        width: auto;
+        font-size: 1.2em;
+    }
+    .second-line button {
+        width: 150px;
+        height: 45px;
+        font-size: 1.1em;
+    }
+    .empty {
+        height: 80px;
+    }
+    footer {
+        padding: 20px 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+    footer div {
+        width: 90%;
+        margin: auto;
+        font-size: 1.2em;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+}
